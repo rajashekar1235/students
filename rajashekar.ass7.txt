@@ -1,0 +1,141 @@
+1)package Assign;
+
+import java.util.Scanner;
+
+public class Array1 {
+
+	public static void main(String[] args) {
+		// to calc 2d array multiplication
+		int[][] a=new int[2][2];
+		int[][] b=new int[2][2];
+		int[][] c=new int[2][2];
+		System.out.print("enter first array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=1;i++)
+		{
+			for(int j=0;j<=1;j++)
+			{
+			a[i][j]=sc.nextInt();	
+			}
+		}
+			System.out.print("enter second array");
+			for(int i=0;i<=1;i++)
+			{
+				for(int j=0;j<=1;j++)
+				{
+					b[i][j]=sc.nextInt();
+				}
+			}
+				System.out.println("result array");
+				for(int i=0;i<=1;i++)
+				{
+					for(int j=0;j<=1;j++)
+					{
+						c[i][j]=0;
+				for(int k=0;k<=1;k++)
+				c[i][j]=c[i][j]+(a[i][k]*b[k][j]);
+				System.out.print(c[i][j]+" ");
+					}
+					System.out.println();
+				
+						
+			}
+		}
+		
+
+	}
+
+
+2)package Assign;
+
+import java.util.Scanner;
+
+public class Array2 {
+
+	public static void main(String[] args) {
+		//to demo integer,string,double, arrays in single array
+		int[] sid=new int[1];
+		String[] grade=new String[1];
+		double[] marks=new double[1];
+		System.out.println("enter array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=0;i++)
+		{
+			sid[i]=sc.nextInt();
+			grade[i]=sc.next();
+			marks[i]=sc.nextDouble();
+		}
+		System.out.println("enter result array");
+		for(int i=0;i<=0;i++)
+		{
+		System.out.print(sid[i]+" "+grade[i]+" "+marks[i]);	
+			
+		}
+	}
+}
+
+
+3)package Assign;
+
+public class Jaggedarray {
+
+	public static void main(String[] args) {
+		// to print jagged array with example
+		int[][] a=new int[3][];
+		a[0]=new int[3];
+		a[1]=new int[2];
+		a[2]=new int[4];
+		//first row
+		a[0][0]=11;
+		a[0][1]=12;
+		a[0][2]=13;
+		//second row
+		a[1][0]=14;
+		a[1][1]=15;
+		//third array
+		a[2][0]=16;
+		a[2][1]=17;
+		a[2][2]=18;
+		a[2][3]=19;
+		System.out.println("jaggad array");
+		for(int i=0;i<=2;i++)
+		{
+			for(int j=0;j<=a[i].length-1;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+4)package Assign;
+
+public class Evenodd {
+
+	public static void main(String[] args) {
+		// create single dim array input 10 integers and find number of even,odd elements?
+		int[] a= {0,1,2,3,4,5,6,7,8,9};
+		int even=0,odd=0;
+		System.out.println("enter array");
+		for(int i=0;i<=9;i++)
+		{
+			if(a[i]%2==0)
+			{
+				System.out.println(i+"it is a even");
+				even++;
+			}
+			else
+			{
+				System.out.println(i+"it is a odd");
+				odd++;
+			}
+			
+		}
+	}
+}
+		
+
+
