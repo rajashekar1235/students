@@ -1,0 +1,56 @@
+1)package xyz;
+
+public class Govt {
+	int gid;
+	String gname;
+	double sal;
+	public static void main(String[] args) {
+	Govt g1=new Govt();
+	g1.gid=1;
+	g1.gname="sunny";
+	g1.sal=1000000;
+	System.out.println(g1.gid+" "+g1.gname+" "+g1.sal);
+	}
+}
+2)package xyz;
+
+public class Govt1 {
+	int gid;
+	String gname;
+	double sal;
+	void input(int x,String y,double z)
+	{
+		gid=x;
+		gname=y;
+		sal=z;
+	}
+	public static void main(String[] args) {
+		Govt1 g1=new Govt1();
+		g1.input(1,"sunny",2000000);
+		{
+		System.out.println(g1.gid+" "+g1.gname+" "+g1.sal);	
+		}
+3)package xyz;
+
+public class Govt1 {
+	int gid;
+	String gname;
+	double sal;
+	void input(int x,String y,double z)
+	{
+		gid=x;
+		gname=y;
+		sal=z;
+	}
+	public static void main(String[] args) {
+		Govt1 g1=new Govt1();
+		g1.input(1,"sunny",2000000);
+		{
+		System.out.println(g1.gid+" "+g1.gname+" "+g1.sal);	
+		}
+		
+		
+
+	}
+
+}
