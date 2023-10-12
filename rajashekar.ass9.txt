@@ -1,0 +1,88 @@
+1)package oops;
+
+import java.util.Scanner;
+
+public class Student {
+	int sid;
+	String sname;
+	double marks;
+	void input()
+	{
+		System.out.println("enter the student details");
+		Scanner sc=new Scanner(System.in);
+		sid=sc.nextInt();
+		sname=sc.next();
+		marks=sc.nextDouble();
+	}
+	void output()
+	{
+	System.out.println(sid+" "+sname+" "+marks);	
+		}
+	public static void main(String[] args) {
+		Student s=new Student();
+		s.input();
+		s.output();
+	}
+}
+
+2)package oops;
+
+public class Bankcustomer {
+	int acno;
+	String atype;
+	double amt;
+	Bankcustomer(int x)
+	{
+		acno=x;
+		System.out.println(x);
+	}
+	Bankcustomer(String y)
+	{
+		atype=y;
+		System.out.println(y);
+	}
+	Bankcustomer(double z)
+	{
+	amt=z;
+	System.out.println(z);
+	}
+
+	public static void main(String[] args) {
+		Bankcustomer b1=new Bankcustomer(123456);
+		Bankcustomer b2=new Bankcustomer("savings");
+		Bankcustomer b3=new Bankcustomer(10000);
+	}
+}
+
+3)package oops;
+class Person{
+	int pid;
+	String pname;
+	Person(int x,String y){
+		pid=x;
+		pname=y;
+	}
+}
+class Student1 extends Person{
+    double marks;
+	Student1(int x, String y,double z) {
+		super(x, y);
+		marks=z;
+	System.out.println(x+" "+y+" "+z);
+	}
+	}
+	class Emp extends Person{
+		double salary;
+		Emp(int x,String y,double m){
+			super(x,y);
+			salary=m;
+			System.out.println(x+" "+y+" "+m);	
+	}
+}
+public class Inher {
+
+	public static void main(String[] args) {
+		Student1 S=new Student1(1,"sunny",1000);
+        Emp E=new Emp(2,"bunny",950);
+	}
+}
