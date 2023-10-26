@@ -1,0 +1,55 @@
+1)package Assign;
+
+public class String1 {
+
+	public static void main(String[] args) {
+	//create a java program to explain about "string"class using given below method
+		//concat(),charAt(),subString(),replace(),indexOf(),startsWith(),endsWith(),equals()
+   String s1="sunny";
+   String s2="bunny";
+   System.out.println(s1.concat("nani"));
+   System.out.println(s1.charAt(4));
+   System.out.println(s1.substring(0,3));
+   System.out.println(s2.replace("bunny","nani"));
+   System.out.println(s2.indexOf(0));
+   System.out.println(s1.startsWith("s"));
+   System.out.println(s1.endsWith("y"));
+   System.out.println(s1.equals("sunny"));
+   
+	}
+
+}
+
+2)package Assign;
+public class String2 {
+	public static void main(String[] args) {
+		//Create java program to explain about "StringBuilder" and "StringBuffer" classes using given below methods
+	    //reverse(),delete(),append(),insert(),length()
+		StringBuilder s1=new StringBuilder("kannamma");
+		StringBuffer s2=new StringBuffer("sunny");
+		System.out.println(s2.delete(0,0));
+		System.out.println(s1.append("sunny"));
+		System.out.println(s1.insert(8,"friend"));
+		System.out.println(s1.length());
+		System.out.println(s1.reverse());
+	}
+}
+
+3)package Assign;
+
+public class String3 {
+
+	public static void main(String[] args) {
+		//Create java Program to explain about "Object" class using given below methods?
+		//equals(),==, hashCode(),toString(),getclass()
+		String s1="Pspk";
+		String s2=new String("Jalsa");
+		StringBuilder s3=new StringBuilder("Balu");
+		StringBuffer s4=new StringBuffer("BRO");
+		System.out.println(s1.equals(s4));
+		System.out.println(s2==s1);
+		System.out.println(s3.hashCode());
+		System.out.println(s1.toString());
+		System.out.println(s4.getClass());	
+	}
+}
