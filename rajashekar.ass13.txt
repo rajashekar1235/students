@@ -1,0 +1,88 @@
+1)package Assign;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+public class File {
+	public static void main(String[] args) throws IOException {
+	   FileOutputStream fout=new FileOutputStream("d://emp.txt");
+	   PrintStream pout=new PrintStream(fout);  
+	   pout.println(19);  
+	   pout.println("sunny");  
+	   pout.println(30000);  
+	   pout.close();  
+	   fout.close();  
+		System.out.println("enter emp details");
+	}
+
+}
+
+2)package Assign;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+public class File2 {
+	public static void main(String[] args) throws IOException {
+		FileWriter fw=new FileWriter("d://Prime.text");
+		FileReader fr=new FileReader("d://Prime.txt");
+		fw.write("lab ativity");
+		  int i;  
+		  while((i=fr.read())!=-1)  
+	 	  System.out.print((char)i); 
+		  System.out.println("sucess");
+		  fw.close();
+		  fr.close();
+
+	}
+
+}
+
+3)package Assign;
+import java.util.Scanner;
+public class File3 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the rollno");
+		int rollno=sc.nextInt();
+		System.out.println("enter the name");
+		String name=sc.next();
+		System.out.println("enter the salary");
+		Double salary=sc.nextDouble();
+		System.out.println("enter the boolean value (true/false):");
+		Boolean value=sc.nextBoolean();
+		System.out.println(rollno+" "+name+" "+salary+" "+value);
+
+	}
+
+}
+
+
+4)package Assign;
+import java.io.Console;
+public class File4 {
+	public static void main(String[] args) {
+		Console c=System.console();  
+		System.out.println("Enter password: ");  
+		char[] ch=c.readPassword();  
+		String pass=String.valueOf(ch);//converting char array into string  
+		System.out.println("Password is: ");  
+	}
+}
+
+5)package Assign;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintStream;
+public class File5 {
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos=new FileOutputStream("d:\\emp777.txt");
+		FileWriter fw1=new FileWriter("fos");
+		PrintStream ps1=new PrintStream(fos);
+		fw1.write("sucess");
+		ps1.println("charan");
+		ps1.println("balaji");
+		ps1.println(24);
+		System.out.println("loading....");
+	}
+
+}
